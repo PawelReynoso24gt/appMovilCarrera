@@ -1,11 +1,11 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { View, Text, StyleSheet } from 'react-native';
 
-export default function App() {
+export default function Home() {
+
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>HOLA A TODOS NIGGAS 🧑🏿‍🦲</Text>
-      <StatusBar style="auto" />
+      <Text style={styles.text}>HOLA A TODOS</Text>
     </View>
   );
 }
@@ -13,13 +13,14 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
     justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#fff',
   },
   text: {
-    fontSize: 50, // Cambia el tamaño de la fuente
-    fontWeight: 'bold', // Opcional, para un texto más grueso
-    textAlign: 'center', // Opcional, centra el texto horizontalmente
+    fontSize: 50,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    marginBottom: 20, // Espaciado adicional
   },
 });
